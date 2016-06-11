@@ -27,7 +27,6 @@ def json():
 def sqlite_fetch():
     id = random.randint(1, 3)
     r = conn.execute("select * from users where id = ?", (id,)).fetchone()
-    print 'res:', r
     if r is not None:
         d = dict(zip(r.keys(), r))
         return flask.jsonify(d)
