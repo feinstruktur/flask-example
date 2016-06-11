@@ -1,6 +1,11 @@
 # flask-example
 Flask example for vapor framework comparison
 
+Install requirements:
+```
+pip install -r requirements.txt
+```
+
 Run with
 ```
 python run.py

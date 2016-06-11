@@ -1,7 +1,9 @@
+import sys
 import flask
 import random
 import sqlite3
 import logging
+import socket
 
 logging.basicConfig(level=logging.WARNING, format='%(levelname)s: %(message)s')
 
@@ -38,4 +40,9 @@ def sqlite_fetch():
     
 
 if __name__ == "__main__":
-    app.run(port=8137)
+    while True:
+        try:
+            app.run(port=8137)
+            sys.exit(0)
+        except socket.error as e:
+            logging.warn("socket error: %s" % e)
