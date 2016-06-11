@@ -6,6 +6,12 @@ Install requirements:
 pip install -r requirements.txt
 ```
 
+If `pip` is not available, install it as follows for example on Ubuntu:
+```
+apt-get install python-pip
+```
+See [the installation instructions](https://pip.pypa.io/en/stable/installing/) for details. `pip` is already installed for Python 2 versions >= 2.7.9 and Python 3 versions >= 3.4
+
 Run with
 ```
 python run.py
