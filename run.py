@@ -40,9 +40,11 @@ def sqlite_fetch():
     
 
 if __name__ == "__main__":
+    port = 8137
+    print 'Listening on port %s' % port
     while True:
         try:
-            app.run(port=8137)
+            app.run(port=port)
             sys.exit(0)
         except socket.error as e:
             logging.warn("socket error: %s" % e)

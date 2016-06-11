@@ -1,7 +1,7 @@
 # flask-example
 Flask example for vapor framework comparison
 
-Install requirements:
+Install requirements (see below for instructions using virtualenv):
 ```
 pip install -r requirements.txt
 ```
@@ -21,3 +21,20 @@ Note that [Flask’s built-in server is not suitable for production](http://flas
 this set-up is therefore not suitable for performance comparisons as-is. Proper deployment options are listed on the page linked to.
 
 The example as-is does allow comparing the development aspect of frameworks.
+
+## Virtualenv
+
+Provided `virtualenv` has been installed via `pip install virtualenv` run
+
+```
+virtualenv venv
+source venv/bin/activate
+```
+
+to set up a virtual env before installing the dependecies:
+
+```
+pip install -r requirements.txt
+```
+
+This will install everything locally.
