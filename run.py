@@ -1,6 +1,9 @@
 import flask
 import random
 import sqlite3
+import logging
+
+logging.basicConfig(level=logging.WARNING, format='%(levelname)s: %(message)s')
 
 app = flask.Flask(__name__)
 
